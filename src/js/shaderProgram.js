@@ -28,11 +28,14 @@ define([
 
 			shaderProgram.vertexPositionAttribute = gl.getAttribLocation(shaderProgram, "aVertexPosition");
 			gl.enableVertexAttribArray(shaderProgram.vertexPositionAttribute);
+			shaderProgram.textureCoordAttribute = gl.getAttribLocation(shaderProgram, "aTextureCoord");
+			gl.enableVertexAttribArray(shaderProgram.textureCoordAttribute);
 
 			shaderProgram.pMatrixUniform = gl.getUniformLocation(shaderProgram, "uPMatrix");
 			shaderProgram.mvMatrixUniform = gl.getUniformLocation(shaderProgram, "uMVMatrix");
+			shaderProgram.samplerUniform = gl.getUniformLocation(shaderProgram, "uSampler");
 
 			return shaderProgram;
 		}
-	}
+	};
 });
