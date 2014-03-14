@@ -1,8 +1,8 @@
 define([
 	'underscore',
 	'viewport',
-	'triangle',
-	'cube',
+	'obj/triangle',
+	'obj/cube',
 	'utils'
 ], function(_, viewport, triangle, cube) {
 	return {
